@@ -1,126 +1,156 @@
-/* General Body and Layout */
-body {
-    font-family: Arial, sans-serif;
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
     color: #333;
-    text-align: center;
-  }
-  
-  h1, h2, p {
-    margin: 0;
-    padding: 10px;
-  }
-  
-  /* Hero Section */
-  .hero {
-    background: #007BFF;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #2c3e50;
+    padding: 20px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a {
+    font-size: 1.8em;
     color: white;
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .hero-title {
-    font-size: 3em;
-    font-weight: bold;
-  }
-  
-  .highlight {
-    color: #FF9F00;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.5em;
-    margin-top: 10px;
-  }
-  
-  .cta {
-    font-size: 1.2em;
-    margin-top: 20px;
-    font-style: italic;
-  }
-  
-  /* About Section */
-  .about {
-    padding: 50px 20px;
-    background: #f4f4f9;
-  }
-  
-  .about h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  .about p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-top: 10px;
-  }
-  
-  /* Sneak Peek Section */
-  .sneak-peek {
-    background: #FF9F00;
-    color: white;
-    padding: 50px 20px;
-  }
-  
-  .sneak-peek h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  .sneak-peek p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-top: 10px;
-  }
-  
-  /* Teaser Section */
-  .teaser {
-    padding: 50px 20px;
-  }
-  
-  .teaser h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  .teaser p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-top: 10px;
-  }
-  
-  /* CTA Section */
-  .cta-section {
-    background: #007BFF;
-    color: white;
-    padding: 50px 20px;
-  }
-  
-  .cta-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  .cta-section p {
-    font-size: 1.1em;
-    margin-bottom: 30px;
-  }
-  
-  .cta-button {
-    font-size: 1.2em;
-    background: #FF9F00;
-    color: white;
-    padding: 15px 30px;
     text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.navbar .nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #2980b9, #8e44ad);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 1.2em;
     border-radius: 5px;
-    display: inline-block;
-  }
-  
-  .cta-button:hover {
-    background: #FF7F00;
-    transition: 0.3s;
-  }
-  
+}
+
+.cta-btn:hover {
+    background-color: #d35400;
+}
+
+/* About Section */
+.about {
+    background-color: #ecf0f1;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-card h3 {
+    font-size: 2em;
+    color: #2980b9;
+}
+
+.service-card p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Upcoming Service Section */
+.upcoming {
+    background-color: #3498db;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.upcoming h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.upcoming p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1em;
+}
